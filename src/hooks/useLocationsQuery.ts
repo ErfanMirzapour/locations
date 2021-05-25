@@ -1,21 +1,16 @@
-import { useQuery } from 'react-query';
+import { useQuery, UseQueryOptions } from 'react-query';
 
-interface Coordination {
-   lat: number;
-   lng: number;
-}
+import { Location } from 'types';
 
-interface Location {
-   id: number;
-   coords: Coordination;
-   name: string;
-}
-
-const useLocationsQuery = () =>
-   useQuery<Location[]>('locations', async () => {
-      const res = await fetch('/locations');
-      if (res.ok) return res.json();
-      throw Error(res.statusText);
-   });
+const useLocationsQuery = (options?: UseQueryOptions<Location[]>) =>
+   useQuery<Location[]>(
+      'locations',
+      async () => {
+         const res = await fetch('/locations');
+         if (res.ok) return res.json();
+         throw Error(res.statusText);
+      },
+      options
+   );
 
 export default useLocationsQuery;
