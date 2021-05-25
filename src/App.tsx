@@ -1,5 +1,7 @@
 import { MapContainer, TileLayer } from 'react-leaflet';
 
+import { Locations } from 'components';
+
 function App() {
    return (
       <MapContainer
@@ -11,6 +13,7 @@ function App() {
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
          />
+         <Locations />
       </MapContainer>
    );
 }
