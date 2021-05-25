@@ -26,7 +26,7 @@
    },
    "scripts": {
       "build": "react-scripts build",
-      "start": "concurrently \"yarn server\" \"yarn client\"",
+      "start": "concurrently \"npm run server\" \"npm run client\"",
       "client": "react-scripts start",
       "server": "json-server --watch data/db.json --port 5000"
    },
