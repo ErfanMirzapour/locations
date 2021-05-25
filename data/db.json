@@ -1,0 +1,28 @@
+{
+   "locations": [
+      {
+         "id": 1,
+         "coords": {
+            "lat": 48.856613,
+            "lng": 2.352222
+         },
+         "name": "Edwin Clarke"
+      },
+      {
+         "id": 2,
+         "coords": {
+            "lat": 51.507351,
+            "lng": -0.127758
+         },
+         "name": "Jeff Romero"
+      },
+      {
+         "id": 3,
+         "coords": {
+            "lat": 2.352222,
+            "lng": 51.388973
+         },
+         "name": "Erfan Mirzapour"
+      }
+   ]
+}
